@@ -4,7 +4,7 @@ var express = require('express');
 // server functions
 const app = express();
 app.listen('3000', () => {
-    console.log('server started!');
+  console.log('server started!');
 });
 app.use(express.static('public'));
 app.use(express.json());
@@ -23,11 +23,11 @@ app.post('/sqlhandle', async (request, response)=>{
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "anna",
+  password: "password",
   database: "acnh"
 });
 
 con.connect((err) => {
-  if (err) {console.log('line 20');}
+  if (err) {console.log('mySQL not connected');}
   console.log("Connected!");
 });
