@@ -5,34 +5,74 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="deleteContainer">
-    <button id="delbtn">
-        Delete Account
-    </button>
+<div>
+    <button class="deletebtn" id="delbtn">Delete Account</button>
 </div>
+
 <h1>Animal Crossing Database</h1>
 <p id='display user'>Hello NAME!</p>
-<p><a href="index.html">Log out</a> ?</p>
+<p><a href="index.html">Log out?</a></p>
 
 <div class="row">
     <div class="wishlistBar" style="background-color:#FFFFFF;">
         <h2>Wishlists</h2>
-        
+        <button class="wishlistbtn" id="addlist">New list</button>
+        <button class="wishlistbtn" id="renamelist">Rename list</button>
+        <br><br>
         <div id="ss"></div>
         <br>
-        <button id="addlist">New list</button>
+        <button class="wishlistbtn" id="listdetails">Details</button>
+        <button class="wishlistbtn" id="listcommon">Common</button>
+        <br><br>
+        <button class="wishlistbtn" id="listvillagers">Villagers</button>
+        <button class="wishlistbtn" id="listmaterials">Materials</button>
+        <br><br>
+        <button class="wishlistbtn" id="listtotalmaterials">Total Materials</button>
+        <button class="wishlistbtn" id="listtotalitems">Total Items</button>
+        <br><br><br>
+        <button class="deletebtn" id="deletelist">Delete list</button>
+        <br><br>
     </div>
     <div class="main" style="background-color:#FFFFFF;">
         <h2>Databases</h2>
-        <input type="text" id="searchbar">
-        <button id="searchbtn">search</button>
+        <input type="text" id="searchbar" placeholder="Search for something">
+        <button class="searchbtn" id="searchbtn">Search</button>
         <br>
         <button class="button" id="itembtn">Items</button>
         <button class="button" id="npcbtn">NPCs</button>
         <button class="button" id="eventbtn">Events</button>
-        <button class="button" id="recipebtn"> Recipes</button>
-        <p>Data..</p>
-        <div id="listTable"></div>
+        <button class="button" id="recipebtn">Recipes</button>
+        <button class="button" id="seriesbtn">Series</button>
+        <br><br>
+        <form class=checkbox>
+            <input class="checkbox" type="checkbox" id="itemidbox" name="itemidbox" checked>
+            <label for="itemidbox">ID</label>
+            <input class="checkbox" type="checkbox" id="itemobtainsbox" name="itemobtainsbox" checked>
+            <label for="itemobtainsbox">Obtains</label>
+            <input class="checkbox" type="checkbox" id="itemsizebox" name="itemsizebox" checked>
+            <label for="itemsizebox">Size</label>
+            <input class="checkbox" type="checkbox" id="itemseriesbox" name="itemseriesbox" checked>
+            <label for="itemseriesbox">Series</label>
+            <input class="checkbox" type="checkbox" id="itemsellbox" name="itemsellbox" checked>
+            <label for="itemsellbox">Sell price</label>
+        </form>
+        <br>
+        <form class=checkbox id="radioCheckbox">
+            <input class="checkbox" type="radio" id="allitembtn" name="itemtype" checked>
+            <label for="allitembtn">All items </label>
+            <input class="checkbox" type="radio" id="crittersbtn" name="itemtype">
+            <label for="crittersbtn">Critters </label>
+            <input class="checkbox" type="radio" id="furnitbn" name="itemtype">
+            <label for="buyablebtn">Furniture </label>
+            <input class="checkbox" type="radio" id="clothingbtn" name="itemtype">
+            <label for="buyablebtn">Clothing </label>
+            <input class="checkbox" type="radio" id="craftablebtn" name="itemtype">
+            <label for="craftablebtn">Craftable </label>
+            <input class="checkbox" type="radio" id="buyablebtn" name="itemtype">
+            <label for="buyablebtn">Buyable</label>
+        </form>
+        <br><br>
+        <div id="bb"></div>
         <div id="resultTable"></div>
     </div>
 </div>

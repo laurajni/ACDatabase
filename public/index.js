@@ -69,7 +69,8 @@ signupbtn.addEventListener("click", async ()=>{
 async function addNewUser(username) {
     const sql = "insert into my_user(user_name) values(\""+ username +"\")";
     try {
-        await query(sql);
+        let res = await query(sql);
+        console.log(res);
     } catch (err) {
         console.log(err);
     }
