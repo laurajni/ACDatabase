@@ -66,7 +66,7 @@ var listTable = new Tabulator("#ss", {
         displayListTable(row._row.data.wishlist_id);
     },
     rowContextMenu: function(e,row){
-        if (confirm("delet this list?")) {
+        if (confirm("delete this list?")) {
             // delete row
             const listid = row._row.data.wishlist_id;
             row.delete().then(()=>{
