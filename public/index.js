@@ -1,7 +1,5 @@
 const sqlbtn = document.getElementById('sub');
-
 const signupbtn = document.getElementById('signupbtn');
-
 const loginbtn = document.getElementById('loginbtn');
 
 localStorage.setItem('user', null);

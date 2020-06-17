@@ -23,7 +23,7 @@ app.post('/sqlhandle', async (request, response)=>{
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "password",
+  password: "anna",
   database: "acnh"
 });
 
