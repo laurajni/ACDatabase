@@ -19,22 +19,8 @@
         <button class="wishlistbtn" id="addlist">New list</button>
         <button class="wishlistbtn" id="renamelist">Rename list</button>
         <br><br>
-        <form class=checkbox>
-            <input class="checkbox" type="checkbox" id="viewlistname" name="viewlistname">
-            <label for="viewlistname">Name</label>
-            <br>
-            <input class="checkbox" type="checkbox" id="viewlistobtain" name="viewlistobtain">
-            <label for="viewlistobtain">Obtained by</label>
-            <br>
-            <input class="checkbox" type="checkbox" id="viewlistsell" name="viewlistsell">
-            <label for="viewlistsell">Sell price</label>
-        </form>
-        <br><br><br><br>
         <div id="ss"></div>
         <br>
-        <button class="wishlistbtn" id="listcraftable">Craftable</button>
-        <button class="wishlistbtn" id="listbuyable">Buyable</button>
-        <br><br>
         <button class="wishlistbtn" id="listdetails">Details</button>
         <button class="wishlistbtn" id="listcommon">Common</button>
         <br><br>
@@ -42,7 +28,7 @@
         <button class="wishlistbtn" id="listmaterials">Materials</button>
         <br><br>
         <button class="wishlistbtn" id="listbuyprice">Buy price</button>
-        <button class="wishlistbtn" id="listbuyprice">Sell price</button>
+        <button class="wishlistbtn" id="listsellprice">Sell price</button>
         <br><br><br>
         <button class="deletebtn" id="deletelist">Delete list</button>
         <br><br>
@@ -57,6 +43,34 @@
         <button class="button" id="eventbtn">Events</button>
         <button class="button" id="recipebtn">Recipes</button>
         <button class="button" id="seriesbtn">Series</button>
+        <br><br>
+        <form class=checkbox>
+            <input class="checkbox" type="checkbox" id="itemidbox" name="itemidbox">
+            <label for="itemidbox">ID</label>
+            <input class="checkbox" type="checkbox" id="itemobtainsbox" name="itemobtainsbox">
+            <label for="itemobtainsbox">Obtains</label>
+            <input class="checkbox" type="checkbox" id="itemsizebox" name="itemsizebox">
+            <label for="itemsizebox">Size</label>
+            <input class="checkbox" type="checkbox" id="itemseriesbox" name="itemseriesbox">
+            <label for="itemseriesbox">Series</label>
+            <input class="checkbox" type="checkbox" id="itemsellbox" name="itemsellbox">
+            <label for="itemsellbox">Sell price</label>
+        </form>
+        <br>
+        <form class=checkbox>
+            <input class="checkbox" type="radio" id="allitembtn" name="itemtype" checked>
+            <label for="allitembtn">All items </label>
+            <input class="checkbox" type="radio" id="crittersbtn" name="itemtype">
+            <label for="crittersbtn">Critters </label>
+            <input class="checkbox" type="radio" id="furnitbn" name="itemtype">
+            <label for="buyablebtn">Furniture </label>
+            <input class="checkbox" type="radio" id="clothingbtn" name="itemtype">
+            <label for="buyablebtn">Clothing </label>
+            <input class="checkbox" type="radio" id="craftablebtn" name="itemtype">
+            <label for="craftablebtn">Craftable </label>
+            <input class="checkbox" type="radio" id="buyablebtn" name="itemtype">
+            <label for="buyablebtn">Buyable</label>
+        </form>
         <br><br>
         <div id="bb"></div>
         <div id="resultTable"></div>
