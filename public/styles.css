@@ -25,6 +25,18 @@
     font-size: 16px;
 }
 
+
+.searchbtn {
+    background-color: #a2b59f;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 80px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 .button:hover {
     background-color: #e2d2d2; /* Green */
     color: white;
@@ -64,6 +76,44 @@
     opacity:1;
 }
 
+.wishlistbtn {
+    background-color: #a2b59f;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.wishlistbtn:hover {
+    opacity:1;
+}
+
+.deletebtn{
+    background-color: #D18063;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.deletebtn:hover {
+    opacity:1;
+}
+
+.signupbtn:hover {
+    opacity:1;
+}
+
 input[type=text]{
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -72,11 +122,6 @@ input[type=text]{
     display: inline-block;
     border: none;
     background: #edeef0;
-}
-
-.deleteContainer {
-    text-align: left;
-    padding: 10px 0px;
 }
 
 .row:after {

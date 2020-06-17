@@ -1,14 +1,11 @@
-
 const sqlbtn = document.getElementById('sub');
-
 const signupbtn = document.getElementById('signupbtn');
-
 const loginbtn = document.getElementById('loginbtn');
 
-localStorage.setItem('user',null);
+localStorage.setItem('user', null);
 
 async function query(sql) {
-    return new Promise((resolve, reject)=>{
+    return new Promise((resolve, reject) => {
         const data = {sql};
         const options = {
             method: 'POST',
@@ -17,22 +14,22 @@ async function query(sql) {
             },
             body: JSON.stringify(data)
         };
-    
-        fetch('/sqlhandle', options).then((response)=>{
+
+        fetch('/sqlhandle', options).then((response) => {
             return response.json();
-        }).then((json)=>{
+        }).then((json) => {
             resolve(json);
-        }).catch((err)=>{
+        }).catch((err) => {
             reject(err);
         });
     });
-    
+
 }
 
-sqlbtn.addEventListener("click", async ()=>{
+sqlbtn.addEventListener("click", async () => {
     const input = document.getElementById('id?');
     const sql = input.value;
-    if (sql.length==0) {
+    if (sql.length == 0) {
         alert("empty input!!");
         return;
     }
@@ -44,20 +41,20 @@ sqlbtn.addEventListener("click", async ()=>{
     }
 });
 
-signupbtn.addEventListener("click", async ()=>{
+signupbtn.addEventListener("click", async () => {
     const input = document.getElementById("Sign up");
     const username = input.value;
-    if (username.length==0) {
+    if (username.length == 0) {
         alert("empty input!!");
         return;
     }
-    const sql = "select user_name from my_user where user_name = \"" + username + "\"";    
+    const sql = "select user_name from my_user where user_name = \"" + username + "\"";
     try {
         let res = await query(sql);
-        if (res.length==0) {
-            location.href='main.html';
+        if (res.length == 0) {
+            location.href = 'main.html';
             addNewUser(username);
-            localStorage.setItem('user',username);
+            localStorage.setItem('user', username);
         } else {
             alert("user name taken");
         }
@@ -67,7 +64,7 @@ signupbtn.addEventListener("click", async ()=>{
 });
 
 async function addNewUser(username) {
-    const sql = "insert into my_user(user_name) values(\""+ username +"\")";
+    const sql = "insert into my_user(user_name) values(\"" + username + "\")";
     try {
         await query(sql);
     } catch (err) {
@@ -75,21 +72,21 @@ async function addNewUser(username) {
     }
 }
 
-loginbtn.addEventListener("click", async ()=>{
+loginbtn.addEventListener("click", async () => {
     const input = document.getElementById("Log in");
     const username = input.value;
-    if (username.length==0) {
+    if (username.length == 0) {
         alert("empty input!!");
         return;
     }
     const sql = "select user_name from my_user where user_name = \"" + username + "\"";
     try {
         let res = await query(sql);
-        if (res.length==0) {
+        if (res.length == 0) {
             alert("can't find user");
         } else {
-            location.href='main.html';
-            localStorage.setItem('user',username);
+            location.href = 'main.html';
+            localStorage.setItem('user', username);
         }
     } catch (err) {
         console.log(err);
