@@ -21,6 +21,25 @@ const addbtn = document.getElementById("addlist");
 
 const commonbtn = document.getElementById("listcommon");
 
+const pricebelowbtn = document.getElementById("pricebelow");
+
+pricebelowbtn.addEventListener("click", async ()=>{
+    var price = prompt("enter a price:");
+    if (price==null) return;
+    let selected = listTable.getSelectedRows();
+    console.log(selected);
+    if (selected.length==0) {
+        alert("choose a list to project");
+        return;
+    }
+    let listId = selected[0]._row.data.wishlist_id;
+    let sql = "select * from item where item.sell_price < "
+    +price+" AND item.item_id in(select item_id from wishlist_item where wishlist_item.list_id = "
+    +listId+" AND item.item_id = wishlist_item.item_id);"
+    let res = await query(sql);
+    mainTable.setData(res);
+})
+
 
 
 let tab = "";
@@ -48,6 +67,8 @@ itembtn.addEventListener("click", ()=> {loadTable("item")});
 npcbtn.addEventListener("click", ()=> {loadTable("npc")});
 eventbtn.addEventListener("click", ()=> {loadTable("sp_event")});
 recipebtn.addEventListener("click", ()=> {loadTable("diy_recipe")});
+seriesbtn.addEventListener("click", ()=> {loadTable("item_series")});
+
 
 async function loadTable(table) {
     tab=table;
@@ -375,8 +396,3 @@ totalitemsbtn.addEventListener("click", async ()=>{
     let res = await query(sql);
     mainTable.setData(res);
 })
-
-//TODO
-seriesbtn.addEventListener("click", ()=>{
-
-});
