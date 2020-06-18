@@ -25,7 +25,7 @@ user chooses which columns to hide from item view
 select * from item;
 
 /*join query
-we diplay the item details of the items in the wishlist*/
+we display the item details of the items in the wishlist*/
 SELECT * 
 FROM item 
 JOIN wishlist_item 

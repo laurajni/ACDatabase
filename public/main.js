@@ -354,7 +354,7 @@ materialsbtn.addEventListener("click", async () => {
         return;
     }
     let listId = selected[0]._row.data.wishlist_id;
-    let sql = "select i.item_name AS Creaftable, i.obtains, mi.item_name, u.quantity from item i "
+    let sql = "select i.item_name AS Craftable, i.obtains, mi.item_name, u.quantity from item i "
         + "join craftable_item c on c.item_id = i.item_id "
         + "join diy_recipe_uses_item u on u.diy_id = c.diy_id "
         + "join item mi on u.item_id = mi.item_id "
