@@ -16,7 +16,7 @@ select * from item
 where item.sell_price > 1000 
 and item.item_id in 
 (select item_id from wishlist_item
-where wishlist_item.item_id = 1 
+where wishlist_item.list_id = 1 
 AND item.item_id = wishlist_item.item_id);
 
 /*projection operation
