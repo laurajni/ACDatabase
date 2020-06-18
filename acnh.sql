@@ -35,7 +35,15 @@ CREATE TABLE `buyable_item` (
 -- Dumping data for table `buyable_item`
 --
 
-INSERT INTO `buyable_item` (`item_id`, `buy_price`, `npc_id`) VALUES (2,900,4),(3,35960,3),(4,3200,3),(105,400,4),(300,490,5),(302,1320,5),(303,2800,5),(306,2640,5),(307,840,5);
+INSERT INTO `buyable_item` (`item_id`, `buy_price`, `npc_id`) VALUES (2,900,4);
+INSERT INTO `buyable_item` (`item_id`, `buy_price`, `npc_id`) VALUES (3,35960,3);
+INSERT INTO `buyable_item` (`item_id`, `buy_price`, `npc_id`) VALUES (4,3200,3);
+INSERT INTO `buyable_item` (`item_id`, `buy_price`, `npc_id`) VALUES (105,400,4);
+INSERT INTO `buyable_item` (`item_id`, `buy_price`, `npc_id`) VALUES (300,490,5);
+INSERT INTO `buyable_item` (`item_id`, `buy_price`, `npc_id`) VALUES (302,1320,5);
+INSERT INTO `buyable_item` (`item_id`, `buy_price`, `npc_id`) VALUES (303,2800,5);
+INSERT INTO `buyable_item` (`item_id`, `buy_price`, `npc_id`) VALUES (306,2640,5);
+INSERT INTO `buyable_item` (`item_id`, `buy_price`, `npc_id`) VALUES (307,840,5);
 
 --
 -- Table structure for table `clothing`
@@ -56,7 +64,14 @@ CREATE TABLE `clothing` (
 -- Dumping data for table `clothing`
 --
 
-INSERT INTO `clothing` (`clothing_id`, `clothing_type`) VALUES (300,'Accessories'),(301,'Dresses'),(302,'Bottoms'),(303,'Dresses'),(304,'Hats'),(305,'Shoes'),(306,'Shoes'),(307,'Tops');
+INSERT INTO `clothing` (`clothing_id`, `clothing_type`) VALUES (300,'Accessories');
+INSERT INTO `clothing` (`clothing_id`, `clothing_type`) VALUES (301,'Dresses');
+INSERT INTO `clothing` (`clothing_id`, `clothing_type`) VALUES (302,'Bottoms');
+INSERT INTO `clothing` (`clothing_id`, `clothing_type`) VALUES (303,'Dresses');
+INSERT INTO `clothing` (`clothing_id`, `clothing_type`) VALUES (304,'Hats');
+INSERT INTO `clothing` (`clothing_id`, `clothing_type`) VALUES (305,'Shoes');
+INSERT INTO `clothing` (`clothing_id`, `clothing_type`) VALUES (306,'Shoes');
+INSERT INTO `clothing` (`clothing_id`, `clothing_type`) VALUES (307,'Tops');
 
 --
 -- Table structure for table `color`
@@ -76,7 +91,13 @@ CREATE TABLE `color` (
 -- Dumping data for table `color`
 --
 
-INSERT INTO `color` (`color_id`, `color`) VALUES (1,'Green'),(2,'Beige'),(3,'Brown'),(4,'White'),(5,'Black'),(6,'Blue'),(7,'Pink');
+INSERT INTO `color` (`color_id`, `color`) VALUES (1,'Green');
+INSERT INTO `color` (`color_id`, `color`) VALUES (2,'Beige');
+INSERT INTO `color` (`color_id`, `color`) VALUES (3,'Brown');
+INSERT INTO `color` (`color_id`, `color`) VALUES (4,'White');
+INSERT INTO `color` (`color_id`, `color`) VALUES (5,'Black');
+INSERT INTO `color` (`color_id`, `color`) VALUES (6,'Blue');
+INSERT INTO `color` (`color_id`, `color`) VALUES (7,'Pink');
 
 --
 -- Table structure for table `craftable_item`
@@ -99,7 +120,15 @@ CREATE TABLE `craftable_item` (
 -- Dumping data for table `craftable_item`
 --
 
-INSERT INTO `craftable_item` (`item_id`, `diy_id`) VALUES (6,1),(7,2),(8,3),(9,4),(10,5),(1,6),(301,7),(304,8),(305,9);
+INSERT INTO `craftable_item` (`item_id`, `diy_id`) VALUES (6,1);
+INSERT INTO `craftable_item` (`item_id`, `diy_id`) VALUES (7,2);
+INSERT INTO `craftable_item` (`item_id`, `diy_id`) VALUES (8,3);
+INSERT INTO `craftable_item` (`item_id`, `diy_id`) VALUES (9,4);
+INSERT INTO `craftable_item` (`item_id`, `diy_id`) VALUES (10,5);
+INSERT INTO `craftable_item` (`item_id`, `diy_id`) VALUES (1,6);
+INSERT INTO `craftable_item` (`item_id`, `diy_id`) VALUES (301,7);
+INSERT INTO `craftable_item` (`item_id`, `diy_id`) VALUES (304,8);
+INSERT INTO `craftable_item` (`item_id`, `diy_id`) VALUES (305,9);
 
 --
 -- Table structure for table `critter`
@@ -122,7 +151,14 @@ CREATE TABLE `critter` (
 -- Dumping data for table `critter`
 --
 
-INSERT INTO `critter` (`critter_id`, `showup_time`, `showup_place`, `critter_type`) VALUES (200,'4pm-9am','River','Fish'),(201,'4pm-9am','River','Fish'),(202,'All day','River','Fish'),(203,'9pm-4am','Sea','Fish'),(250,'5pm-8am','On ground','Bug'),(251,'All day','Trees (coconut)','Bug'),(252,'8am-5pm','On trees','Bug'),(253,'All day','Flying','Bug');
+INSERT INTO `critter` (`critter_id`, `showup_time`, `showup_place`, `critter_type`) VALUES (200,'4pm-9am','River','Fish');
+INSERT INTO `critter` (`critter_id`, `showup_time`, `showup_place`, `critter_type`) VALUES (201,'4pm-9am','River','Fish');
+INSERT INTO `critter` (`critter_id`, `showup_time`, `showup_place`, `critter_type`) VALUES (202,'All day','River','Fish');
+INSERT INTO `critter` (`critter_id`, `showup_time`, `showup_place`, `critter_type`) VALUES (203,'9pm-4am','Sea','Fish');
+INSERT INTO `critter` (`critter_id`, `showup_time`, `showup_place`, `critter_type`) VALUES (250,'5pm-8am','On ground','Bug');
+INSERT INTO `critter` (`critter_id`, `showup_time`, `showup_place`, `critter_type`) VALUES (251,'All day','Trees (coconut)','Bug');
+INSERT INTO `critter` (`critter_id`, `showup_time`, `showup_place`, `critter_type`) VALUES (252,'8am-5pm','On trees','Bug');
+INSERT INTO `critter` (`critter_id`, `showup_time`, `showup_place`, `critter_type`) VALUES (253,'All day','Flying','Bug');
 
 --
 -- Table structure for table `critter_time`
@@ -144,7 +180,22 @@ CREATE TABLE `critter_time` (
 -- Dumping data for table `critter_time`
 --
 
-INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (200,'N','Jun-Sept'),(200,'S','Dec-Mar'),(201,'N','Jun-Sept'),(201,'S','Dec-Mar'),(202,'N','Nov-Mar'),(202,'S','May-Sep'),(203,'N','Nov-Feb'),(203,'S','May-Aug'),(250,'N','Sep-Oct'),(250,'S','Mar-Apr'),(251,'N','Jul-Aug'),(251,'S','Jan-Feb'),(252,'N','Jul-Aug'),(252,'S','Jan-Feb'),(253,'N','Nov-Feb'),(253,'S','May-Aug');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (200,'N','Jun-Sept');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (200,'S','Dec-Mar');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (201,'N','Jun-Sept');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (201,'S','Dec-Mar');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (202,'N','Nov-Mar');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (202,'S','May-Sep');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (203,'N','Nov-Feb');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (203,'S','May-Aug');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (250,'N','Sep-Oct');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (250,'S','Mar-Apr');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (251,'N','Jul-Aug');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (251,'S','Jan-Feb');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (252,'N','Jul-Aug');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (252,'S','Jan-Feb');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (253,'N','Nov-Feb');
+INSERT INTO `critter_time` (`critter_id`, `hemisphere`, `month`) VALUES (253,'S','May-Aug');
 
 --
 -- Table structure for table `diy_recipe`
@@ -172,7 +223,15 @@ CREATE TABLE `diy_recipe` (
 -- Dumping data for table `diy_recipe`
 --
 
-INSERT INTO `diy_recipe` (`diy_id`, `item_id`, `diy_name`, `season`, `event_id`) VALUES (1,6,'Cherry-blossom Branches Recipe','1',1),(2,7,'Cherry-blossom Clock Recipe','1',1),(3,8,'Cherry-blossom-petal Pile Recipe','1',1),(4,9,'Bamboo Bench Recipe','1',2),(5,10,'Bamboo Candleholder Recipe','1',2),(6,1,'Apple Rug Recipe',NULL,NULL),(7,301,'Apple Dress Recipe',NULL,NULL),(8,304,'Apple Hat Recipe',NULL,NULL),(9,305,'Armor Shoes Recipe',NULL,NULL);
+INSERT INTO `diy_recipe` (`diy_id`, `item_id`, `diy_name`, `season`, `event_id`) VALUES (1,6,'Cherry-blossom Branches Recipe','1',1);
+INSERT INTO `diy_recipe` (`diy_id`, `item_id`, `diy_name`, `season`, `event_id`) VALUES (2,7,'Cherry-blossom Clock Recipe','1',1);
+INSERT INTO `diy_recipe` (`diy_id`, `item_id`, `diy_name`, `season`, `event_id`) VALUES (3,8,'Cherry-blossom-petal Pile Recipe','1',1);
+INSERT INTO `diy_recipe` (`diy_id`, `item_id`, `diy_name`, `season`, `event_id`) VALUES (4,9,'Bamboo Bench Recipe','1',2);
+INSERT INTO `diy_recipe` (`diy_id`, `item_id`, `diy_name`, `season`, `event_id`) VALUES (5,10,'Bamboo Candleholder Recipe','1',2);
+INSERT INTO `diy_recipe` (`diy_id`, `item_id`, `diy_name`, `season`, `event_id`) VALUES (6,1,'Apple Rug Recipe',NULL,NULL);
+INSERT INTO `diy_recipe` (`diy_id`, `item_id`, `diy_name`, `season`, `event_id`) VALUES (7,301,'Apple Dress Recipe',NULL,NULL);
+INSERT INTO `diy_recipe` (`diy_id`, `item_id`, `diy_name`, `season`, `event_id`) VALUES (8,304,'Apple Hat Recipe',NULL,NULL);
+INSERT INTO `diy_recipe` (`diy_id`, `item_id`, `diy_name`, `season`, `event_id`) VALUES (9,305,'Armor Shoes Recipe',NULL,NULL);
 
 --
 -- Table structure for table `diy_recipe_uses_item`
@@ -196,7 +255,19 @@ CREATE TABLE `diy_recipe_uses_item` (
 -- Dumping data for table `diy_recipe_uses_item`
 --
 
-INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (1,100,8),(1,101,5),(1,102,4),(2,100,5),(2,103,1),(3,100,5),(4,104,8),(5,101,2),(5,104,3),(6,105,6),(7,105,8),(8,105,5),(9,103,6);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (1,100,8);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (1,101,5);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (1,102,4);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (2,100,5);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (2,103,1);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (3,100,5);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (4,104,8);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (5,101,2);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (5,104,3);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (6,105,6);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (7,105,8);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (8,105,5);
+INSERT INTO `diy_recipe_uses_item` (`diy_id`, `item_id`, `quantity`) VALUES (9,103,6);
 
 --
 -- Table structure for table `event_drop_recipe`
@@ -219,7 +290,11 @@ CREATE TABLE `event_drop_recipe` (
 -- Dumping data for table `event_drop_recipe`
 --
 
-INSERT INTO `event_drop_recipe` (`event_id`, `diy_id`) VALUES (1,1),(1,2),(1,3),(2,4),(2,5);
+INSERT INTO `event_drop_recipe` (`event_id`, `diy_id`) VALUES (1,1);
+INSERT INTO `event_drop_recipe` (`event_id`, `diy_id`) VALUES (1,2);
+INSERT INTO `event_drop_recipe` (`event_id`, `diy_id`) VALUES (1,3);
+INSERT INTO `event_drop_recipe` (`event_id`, `diy_id`) VALUES (2,4);
+INSERT INTO `event_drop_recipe` (`event_id`, `diy_id`) VALUES (2,5);
 
 --
 -- Table structure for table `event_time`
@@ -242,7 +317,14 @@ CREATE TABLE `event_time` (
 -- Dumping data for table `event_time`
 --
 
-INSERT INTO `event_time` (`event_id`, `hemisphere`, `start_date`, `end_date`) VALUES (1,'N','04-01','04-10'),(1,'S','10-01','10-10'),(2,'N','03-01','05-31'),(2,'S','09-01','11-31'),(3,'N','Saturday','Saturday'),(3,'S','Saturday','Saturday'),(4,'N','Monday','Friday'),(4,'S','Monday','Friday');
+INSERT INTO `event_time` (`event_id`, `hemisphere`, `start_date`, `end_date`) VALUES (1,'N','04-01','04-10');
+INSERT INTO `event_time` (`event_id`, `hemisphere`, `start_date`, `end_date`) VALUES (1,'S','10-01','10-10');
+INSERT INTO `event_time` (`event_id`, `hemisphere`, `start_date`, `end_date`) VALUES (2,'N','03-01','05-31');
+INSERT INTO `event_time` (`event_id`, `hemisphere`, `start_date`, `end_date`) VALUES (2,'S','09-01','11-31');
+INSERT INTO `event_time` (`event_id`, `hemisphere`, `start_date`, `end_date`) VALUES (3,'N','Saturday','Saturday');
+INSERT INTO `event_time` (`event_id`, `hemisphere`, `start_date`, `end_date`) VALUES (3,'S','Saturday','Saturday');
+INSERT INTO `event_time` (`event_id`, `hemisphere`, `start_date`, `end_date`) VALUES (4,'N','Monday','Friday');
+INSERT INTO `event_time` (`event_id`, `hemisphere`, `start_date`, `end_date`) VALUES (4,'S','Monday','Friday');
 
 --
 -- Table structure for table `furniture`
@@ -263,7 +345,16 @@ CREATE TABLE `furniture` (
 -- Dumping data for table `furniture`
 --
 
-INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (1,'RUG'),(2,'FLO'),(3,'FUR'),(4,'FUR'),(5,'FUR'),(6,'FUR'),(7,'WAL'),(8,'RUG'),(9,'FUR'),(10,'FUR');
+INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (1,'RUG');
+INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (2,'FLO');
+INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (3,'FUR');
+INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (4,'FUR');
+INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (5,'FUR');
+INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (6,'FUR');
+INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (7,'WAL');
+INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (8,'RUG');
+INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (9,'FUR');
+INSERT INTO `furniture` (`furniture_id`, `item_category`) VALUES (10,'FUR');
 
 --
 -- Table structure for table `item`
@@ -290,7 +381,38 @@ CREATE TABLE `item` (
 -- Dumping data for table `item`
 --
 
-INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (1,'Apple Rug','Crafting','3x3',1,1200),(2,'Aqua Tile Flooring','Buy Nook\'s Cranny','1x1',NULL,225),(3,'Acnh Nintendo Switch','Order Nook Shopping','1x1',NULL,8990),(4,'Agent K.K.','Listen to K.K. Slider','1x1',2,800),(5,'Agrias Butterfly Model','Trade from Flick','1x1',3,9000),(6,'Cherry-blossom Branches','Crafting','2x2',4,4240),(7,'Cherry-blossom Clock','Crafting','1x1',4,2750),(8,'Cherry-blossom-petal Pile','Crafting','1x1',4,2000),(9,'Bamboo Bench','Crafting','2x1',5,1280),(10,'Bamboo Candleholder','Crafting','1x1',5,880),(100,'Cherry-blossom Petal','Cherry Blossom Festival','1x1',4,200),(101,'Clay','Hit rocks','1x1',NULL,100),(102,'Tree Branch','Shake trees','1x1',NULL,5),(103,'Iron Nugget','Hit rocks','1x1',NULL,275),(104,'Bamboo Piece','Hit bamboo with axe','1x1',NULL,200),(105,'Apple','Harvest from trees','1x1',1,100),(200,'Arapaima','Fishing','2x1',NULL,10000),(201,'Arowana','Fishing','1x1',NULL,10000),(202,'Bitterling','Fishing','1x1',NULL,900),(203,'Blowfish','Fishing','1x1',NULL,500),(250,'Bell Cricket','Catch bug','1x1',NULL,430),(251,'Blue Weevil Beetle','Catch bug','1x1',NULL,800),(252,'Brown Cicada','Catch bug','1x1',NULL,350),(253,'Damselfly','Catch bug','1x1',NULL,500),(300,'3D Glasses','Buy from Able Sisters','1x1',NULL,122),(301,'Apple Dress','Crafting','1x1',1,1600),(302,'Acid-washed Jeans','Buy from Able Sisters','1x1',NULL,330),(303,'Adventure Dress','Buy from Able Sisters','1x1',NULL,700),(304,'Apple Hat','Crafting','1x1',1,1000),(305,'Armor Shoes','Crafting','1x1',NULL,3000),(306,'Antique Boots','Buy from Able Sisters','1x1',NULL,660),(307,'Apron','Buy from Able Sisters','1x1',NULL,210);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (1,'Apple Rug','Crafting','3x3',1,1200);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (2,'Aqua Tile Flooring','Buy Nook\'s Cranny','1x1',NULL,225);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (3,'Acnh Nintendo Switch','Order Nook Shopping','1x1',NULL,8990);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (4,'Agent K.K.','Listen to K.K. Slider','1x1',2,800);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (5,'Agrias Butterfly Model','Trade from Flick','1x1',3,9000);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (6,'Cherry-blossom Branches','Crafting','2x2',4,4240);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (7,'Cherry-blossom Clock','Crafting','1x1',4,2750);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (8,'Cherry-blossom-petal Pile','Crafting','1x1',4,2000);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (9,'Bamboo Bench','Crafting','2x1',5,1280);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (10,'Bamboo Candleholder','Crafting','1x1',5,880);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (100,'Cherry-blossom Petal','Cherry Blossom Festival','1x1',4,200);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (101,'Clay','Hit rocks','1x1',NULL,100);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (102,'Tree Branch','Shake trees','1x1',NULL,5);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (103,'Iron Nugget','Hit rocks','1x1',NULL,275);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (104,'Bamboo Piece','Hit bamboo with axe','1x1',NULL,200);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (105,'Apple','Harvest from trees','1x1',1,100);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (200,'Arapaima','Fishing','2x1',NULL,10000);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (201,'Arowana','Fishing','1x1',NULL,10000);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (202,'Bitterling','Fishing','1x1',NULL,900);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (203,'Blowfish','Fishing','1x1',NULL,500);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (250,'Bell Cricket','Catch bug','1x1',NULL,430);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (251,'Blue Weevil Beetle','Catch bug','1x1',NULL,800);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (252,'Brown Cicada','Catch bug','1x1',NULL,350);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (253,'Damselfly','Catch bug','1x1',NULL,500);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (300,'3D Glasses','Buy from Able Sisters','1x1',NULL,122);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (301,'Apple Dress','Crafting','1x1',1,1600);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (302,'Acid-washed Jeans','Buy from Able Sisters','1x1',NULL,330);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (303,'Adventure Dress','Buy from Able Sisters','1x1',NULL,700);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (304,'Apple Hat','Crafting','1x1',1,1000);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (305,'Armor Shoes','Crafting','1x1',NULL,3000);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (306,'Antique Boots','Buy from Able Sisters','1x1',NULL,660);
+INSERT INTO `item` (`item_id`, `item_name`, `obtains`, `item_size`, `item_series_id`, `sell_price`) VALUES (307,'Apron','Buy from Able Sisters','1x1',NULL,210);
 
 --
 -- Table structure for table `item_color`
@@ -315,7 +437,17 @@ CREATE TABLE `item_color` (
 -- Dumping data for table `item_color`
 --
 
-INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (9,1),(10,1),(307,1),(9,2),(10,2),(9,3),(10,3),(307,3),(302,5),(302,6),(307,7);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (9,1);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (10,1);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (307,1);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (9,2);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (10,2);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (9,3);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (10,3);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (307,3);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (302,5);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (302,6);
+INSERT INTO `item_color` (`item_id`, `color_id`) VALUES (307,7);
 
 --
 -- Table structure for table `item_series`
@@ -336,7 +468,11 @@ CREATE TABLE `item_series` (
 -- Dumping data for table `item_series`
 --
 
-INSERT INTO `item_series` (`item_series_id`, `series_name`) VALUES (5,'Bamboo'),(4,'Cherry-blossom Festival'),(1,'Fruit'),(3,'Models'),(2,'Music');
+INSERT INTO `item_series` (`item_series_id`, `series_name`) VALUES (5,'Bamboo');
+INSERT INTO `item_series` (`item_series_id`, `series_name`) VALUES (4,'Cherry-blossom Festival');
+INSERT INTO `item_series` (`item_series_id`, `series_name`) VALUES (1,'Fruit');
+INSERT INTO `item_series` (`item_series_id`, `series_name`) VALUES (3,'Models');
+INSERT INTO `item_series` (`item_series_id`, `series_name`) VALUES (2,'Music');
 
 --
 -- Table structure for table `my_user`
@@ -349,14 +485,18 @@ CREATE TABLE `my_user` (
   `user_id` int NOT NULL AUTO_INCREMENT,
   `user_name` char(20) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `my_user`
 --
 
-INSERT INTO `my_user` (`user_id`, `user_name`) VALUES (1,'Laura'),(2,'Yanbo'),(3,'Jett'),(4,'Phoenix');
+INSERT INTO `my_user` (`user_id`, `user_name`) VALUES (1,'Laura');
+INSERT INTO `my_user` (`user_id`, `user_name`) VALUES (2,'Yanbo');
+INSERT INTO `my_user` (`user_id`, `user_name`) VALUES (3,'Jett');
+INSERT INTO `my_user` (`user_id`, `user_name`) VALUES (6,'Phoenix');
+INSERT INTO `my_user` (`user_id`, `user_name`) VALUES (7,'Guest');
 
 --
 -- Table structure for table `npc`
@@ -379,7 +519,16 @@ CREATE TABLE `npc` (
 -- Dumping data for table `npc`
 --
 
-INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (1,'Flick','M','Chameleon'),(2,'K.K. Slider','M','Dog'),(3,'Tom Nook','M','Tanuki'),(4,'Timmy&Tommy','M','Tanuki'),(5,'Mable','F','Hedgehog'),(100,'Marshal','M','Squirrel'),(101,'Raymond','M','Cat'),(102,'Marina','F','Octopus'),(103,'Merengue','F','Rhino'),(104,'Deirdre','F','Deer');
+INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (1,'Flick','M','Chameleon');
+INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (2,'K.K. Slider','M','Dog');
+INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (3,'Tom Nook','M','Tanuki');
+INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (4,'Timmy&Tommy','M','Tanuki');
+INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (5,'Mable','F','Hedgehog');
+INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (100,'Marshal','M','Squirrel');
+INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (101,'Raymond','M','Cat');
+INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (102,'Marina','F','Octopus');
+INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (103,'Merengue','F','Rhino');
+INSERT INTO `npc` (`npc_id`, `npc_name`, `gender`, `species`) VALUES (104,'Deirdre','F','Deer');
 
 --
 -- Table structure for table `npc_gift`
@@ -403,7 +552,13 @@ CREATE TABLE `npc_gift` (
 -- Dumping data for table `npc_gift`
 --
 
-INSERT INTO `npc_gift` (`npc_id`, `diy_id`, `note`) VALUES (100,6,'Found crafting'),(102,8,'Found crafting'),(102,9,'Found crafting'),(103,9,'Found crafting'),(104,6,'Found crafting'),(104,7,'Found crafting'),(104,8,'Found crafting');
+INSERT INTO `npc_gift` (`npc_id`, `diy_id`, `note`) VALUES (100,6,'Found crafting');
+INSERT INTO `npc_gift` (`npc_id`, `diy_id`, `note`) VALUES (102,8,'Found crafting');
+INSERT INTO `npc_gift` (`npc_id`, `diy_id`, `note`) VALUES (102,9,'Found crafting');
+INSERT INTO `npc_gift` (`npc_id`, `diy_id`, `note`) VALUES (103,9,'Found crafting');
+INSERT INTO `npc_gift` (`npc_id`, `diy_id`, `note`) VALUES (104,6,'Found crafting');
+INSERT INTO `npc_gift` (`npc_id`, `diy_id`, `note`) VALUES (104,7,'Found crafting');
+INSERT INTO `npc_gift` (`npc_id`, `diy_id`, `note`) VALUES (104,8,'Found crafting');
 
 --
 -- Table structure for table `seller`
@@ -425,7 +580,9 @@ CREATE TABLE `seller` (
 -- Dumping data for table `seller`
 --
 
-INSERT INTO `seller` (`npc_id`, `seller_time`) VALUES (3,'All day'),(4,'9am-9pm/9am-10pm'),(5,'9pm-9pm');
+INSERT INTO `seller` (`npc_id`, `seller_time`) VALUES (3,'All day');
+INSERT INTO `seller` (`npc_id`, `seller_time`) VALUES (4,'9am-9pm/9am-10pm');
+INSERT INTO `seller` (`npc_id`, `seller_time`) VALUES (5,'9pm-9pm');
 
 --
 -- Table structure for table `sp_event`
@@ -446,7 +603,10 @@ CREATE TABLE `sp_event` (
 -- Dumping data for table `sp_event`
 --
 
-INSERT INTO `sp_event` (`event_id`, `event_name`, `event_description`) VALUES (1,'Cherry-blossom Festival','Trees turn pink, special recipes in eggs'),(2,'Spring','Bamboo recipes common'),(3,'Saturday Night Concert','K.K. Slider comes to sing'),(4,'Weekly visitor','NPC may come once a week');
+INSERT INTO `sp_event` (`event_id`, `event_name`, `event_description`) VALUES (1,'Cherry-blossom Festival','Trees turn pink, special recipes in eggs');
+INSERT INTO `sp_event` (`event_id`, `event_name`, `event_description`) VALUES (2,'Spring','Bamboo recipes common');
+INSERT INTO `sp_event` (`event_id`, `event_name`, `event_description`) VALUES (3,'Saturday Night Concert','K.K. Slider comes to sing');
+INSERT INTO `sp_event` (`event_id`, `event_name`, `event_description`) VALUES (4,'Weekly visitor','NPC may come once a week');
 
 --
 -- Table structure for table `special_npc`
@@ -470,7 +630,8 @@ CREATE TABLE `special_npc` (
 -- Dumping data for table `special_npc`
 --
 
-INSERT INTO `special_npc` (`npc_id`, `task`, `event_id`) VALUES (1,'Buy your bugs and trade models',4),(2,'Request a song',3);
+INSERT INTO `special_npc` (`npc_id`, `task`, `event_id`) VALUES (1,'Buy your bugs and trade models',4);
+INSERT INTO `special_npc` (`npc_id`, `task`, `event_id`) VALUES (2,'Request a song',3);
 
 --
 -- Table structure for table `villager`
@@ -492,7 +653,11 @@ CREATE TABLE `villager` (
 -- Dumping data for table `villager`
 --
 
-INSERT INTO `villager` (`villager_id`, `personality`, `birthday`) VALUES (100,'Smug','0000-09-29'),(101,'Smug','0000-10-01'),(102,'Normal','0000-06-26'),(103,'Normal','0000-03-19'),(104,'Sisterly','0000-05-04');
+INSERT INTO `villager` (`villager_id`, `personality`, `birthday`) VALUES (100,'Smug','0000-09-29');
+INSERT INTO `villager` (`villager_id`, `personality`, `birthday`) VALUES (101,'Smug','0000-10-01');
+INSERT INTO `villager` (`villager_id`, `personality`, `birthday`) VALUES (102,'Normal','0000-06-26');
+INSERT INTO `villager` (`villager_id`, `personality`, `birthday`) VALUES (103,'Normal','0000-03-19');
+INSERT INTO `villager` (`villager_id`, `personality`, `birthday`) VALUES (104,'Sisterly','0000-05-04');
 
 --
 -- Table structure for table `wishlist`
@@ -506,16 +671,22 @@ CREATE TABLE `wishlist` (
   `wishlist_name` char(20) NOT NULL,
   `user_id` int DEFAULT NULL,
   PRIMARY KEY (`wishlist_id`,`wishlist_name`),
+  UNIQUE KEY `wishlist_name` (`wishlist_name`,`user_id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `wishlist_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `my_user` (`user_id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `wishlist`
 --
 
-INSERT INTO `wishlist` (`wishlist_id`, `wishlist_name`, `user_id`) VALUES (1,'Garden',1),(2,'Home',1),(3,'Wishlist',2),(4,'Random',3),(5,'Random2',3);
+INSERT INTO `wishlist` (`wishlist_id`, `wishlist_name`, `user_id`) VALUES (1,'Outdoor',1);
+INSERT INTO `wishlist` (`wishlist_id`, `wishlist_name`, `user_id`) VALUES (2,'Home',1);
+INSERT INTO `wishlist` (`wishlist_id`, `wishlist_name`, `user_id`) VALUES (3,'Wishlist',2);
+INSERT INTO `wishlist` (`wishlist_id`, `wishlist_name`, `user_id`) VALUES (4,'Random',3);
+INSERT INTO `wishlist` (`wishlist_id`, `wishlist_name`, `user_id`) VALUES (5,'Random2',3);
+INSERT INTO `wishlist` (`wishlist_id`, `wishlist_name`, `user_id`) VALUES (8,'List',7);
 
 --
 -- Table structure for table `wishlist_item`
@@ -538,7 +709,33 @@ CREATE TABLE `wishlist_item` (
 -- Dumping data for table `wishlist_item`
 --
 
-INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (2,1),(3,1),(4,1),(5,1),(3,2),(4,2),(5,2),(3,3),(4,3),(5,3),(3,4),(4,4),(1,5),(2,5),(3,5),(1,6),(3,6),(1,7),(3,7),(1,8),(3,8),(1,9),(3,9),(1,10),(3,10);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (2,1);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (3,1);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (4,1);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (5,1);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (3,2);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (4,2);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (5,2);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (3,3);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (4,3);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (5,3);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (3,4);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (4,4);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (1,5);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (2,5);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (3,5);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (1,6);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (2,6);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (3,6);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (1,7);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (3,7);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (1,8);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (3,8);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (1,9);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (2,9);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (3,9);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (1,10);
+INSERT INTO `wishlist_item` (`list_id`, `item_id`) VALUES (3,10);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
